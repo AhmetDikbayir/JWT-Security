@@ -1,5 +1,6 @@
 package com.tpe.domain;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -40,6 +41,4 @@ public class User {
             inverseJoinColumns = @JoinColumn(name="role_id"))
     @ManyToMany(fetch=FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
-
-
 }
